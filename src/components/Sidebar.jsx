@@ -104,7 +104,7 @@ export const Sidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse ,isManu
       </Menu>
 
       <Footer $collapsed={isCollapsed}>
-        <Avatar src={`https://ui-avatars.com/api/?name=${user.name}&background=random`} alt="User" />
+        <Avatar src={`https://ui-avatars.com/api/?name=${user?.name}&background=random`} alt="User" />
         <UserInfo $collapsed={isCollapsed}>
           <UserName>{user.name}</UserName>
           <UserRole>{mockUser.role}</UserRole>
